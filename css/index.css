@@ -436,7 +436,6 @@ input,img{
 #pic {
     width: 100%;
     height: 450px;
-    border: 1px solid red;
     background: url("../images/1.jpg") no-repeat center #704F84;
 }
 #pic .pic-box{
@@ -444,13 +443,11 @@ input,img{
     width: 1200px;
     height: 450px;
     margin: 0px auto;
-    border: 1px solid blue;
 }
 #pic .pic-box .pic-small{
     position: absolute;
     top: 398px;
     left: 0px;
-    border: 1px solid red;
     height: 50px;
 }
 #pic .pic-box .pic-small li{
@@ -476,5 +473,69 @@ input,img{
     left: 0px;
     width: 66px;
     height: 43px;
+}
+#pic .pic-box .pic-redio{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 345px;
+    width: 42px;
+    height: 42px;
+    background: url("../images/png24.png")0 0 no-repeat;
+}
+#pic .pic-box div.pic-title{
+    position: absolute;
+    top: 359px;
+    left: 59px;
+    width: 800px;
+}
+#pic .pic-box div.pic-title a{
+    display: block;
+    position: absolute;
+    left:0px;
+    top:-5px;
+    font-size: 20px;
+    color: #ffffff;
+    display: none;
+    font-family: '微软雅黑';
+}
+#pic .pic-box .pic-detail{
+    position: absolute;
+    width: 238px;
+    height: 448px;
+    background: #323232;
+    border: 1px solid red;
+    top:0px;
+    right: 0px;
+}
+#pic .pic-box .pic-detail .pic-title{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 238px;
+    height: 31px;
+    background: #292929;
+    line-height: 21px;
+}
+#pic .pic-box .pic-detail .pic-title a{
+    float: left;
+    color: #999999;
+    font-size: 14px;
+    font-family:'微软雅黑';
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left:4px ;
+}
+#pic .pic-box .pic-detail .pic-cotent{
+    position: absolute;
+    top: 31px;
+    left: 8px;
+    height: 417px;
+    width: 220px;
+    border: 1px solid red;
+}
+#pic .pic-box .pic-detail .pic-title pic-hover{
+    color: #249FF1;
+    border-bottom: 2px solid #249FF1;
 }
 /*图片轮播结束*/
