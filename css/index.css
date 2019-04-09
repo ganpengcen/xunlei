@@ -1,0 +1,480 @@
+/*初始化*/
+body{
+    background: #fbfbfb;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input,img{
+    border: none;
+}
+/*初始化结束*/
+/*头部开始*/
+.headerBox {
+    position: relative;
+    width: 1200px;
+    height: 102px;
+    margin: 0px auto;
+}
+.headerBox .logo a{
+    display: block;
+    width: 163px;
+    height: 47px;
+    position: absolute;
+    top: 28px;
+    left: 2px;
+    background: url("../images/headernav_0917.png") 0 -41px no-repeat;
+}
+.headerBox .flashPic{
+    position: absolute;
+    width: 130px;
+    height: 80px;
+    left: 165px;
+    top:7px;
+}
+.headerBox .search{
+    position: absolute;
+    width: 357px;
+    height: 40px;
+    left: 414px;
+    top: 24px;
+    background: url("../images/headernav_0917.png")0 0 no-repeat;
+}
+.headerBox .search .searchText{
+    position: absolute;
+    left:3px;
+    top:3px;
+    height: 34px;
+    line-height: 34px;
+    width: 289px;
+    color: #c4c4c4;
+    text-indent: 10px;
+}
+.change{
+    position: absolute;
+    left:3px;
+    top:2px;
+    height: 34px;
+    line-height: 32px;
+    width: 287px;
+    text-indent: 10px;
+    border: 1px solid #4EB7FE;
+    box-shadow: 0 0 2px #4EB7FE;
+}
+/*搜索框样式改变*/
+.headerBox .search .oBtn{
+    position: absolute;
+    left:292px;
+    top:3px;
+    height: 34px;
+    width: 61px;
+    background: transparent;
+    border:none;
+    cursor: pointer;
+}
+.headerBox .searchTag{
+    position: absolute;
+    left:414px;
+    top:68px;
+}
+.headerBox .searchTag a{
+    color: #666666;
+    font-family: "宋体","Arial Narrow";
+    font-size:12px;
+}
+.headerBox .searchTag a.link{
+    color: #999999;
+}
+.headerBox .searchTag .link2{
+    padding-left:12px;
+}
+.headerBox .searchTag a:hover{
+    text-decoration: underline;
+}
+    /*登录注册*/
+.headerBox .userArea{
+    height: 15px;
+    line-height: 15px;
+    width: 288px;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+.headerBox .userArea b{
+    display: block;
+    height: 12px;
+    width:12px;
+}
+.headerBox .userArea>div{
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.headerBox .userArea div.userArea-l{
+    height: 15px;
+    position: relative;
+}
+.headerBox .userArea div.userArea-l b{
+    top:3px;
+    position: absolute;
+    left: 0px;
+    background: url("../images/headernav_0917.png")-255px -42px no-repeat;
+}
+.headerBox .userArea div.userArea-l a{
+    padding-left: 2px;
+    color: #333333;
+    font-size:12px;
+}
+.headerBox .userArea div.userArea-l a:hover{
+    color: #249FF1;
+    text-decoration: underline;
+}
+.headerBox .userArea div.userArea-m{
+    top: 2px;
+    line-height: 15px;
+    position: relative;
+    color: #333;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    height: 30px;
+}
+.headerBox .userArea div.userArea-m b.left{
+    position: absolute;
+    left:0px;
+    top: 2px;
+    background: url("../images/headernav_0917.png") -268px -41px no-repeat;
+}
+.headerBox .userArea div.userArea-m b.right{
+    position: absolute;
+    top:2px;
+    right: 0px;
+    background: url("../images/headernav_0917.png") -267px -53px no-repeat;
+}
+
+.headerBox .userArea div.userArea-r {
+    top: 2px;
+    line-height: 15px;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    margin-left: 4px;
+    padding: 0px auto;
+    color: #333;
+    font-size: 12px;
+}
+
+.headerBox .userArea div.userArea-r b.left{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    background: url("../images/headernav_0917.png") -279px -41px no-repeat;
+}
+.headerBox .userArea div.userArea-r b.right{
+    position: absolute;
+    top:2px;
+    right: 0px;
+    background: url("../images/headernav_0917.png") -267px -53px no-repeat;
+}
+/*隐藏区域*/
+.headerBox .userArea .userArea-r .right-hidden{
+    position: absolute;
+    border: 1px solid #CECECE;
+    background: #FBFBFA;
+    width: 238px;
+    height: 320px;
+    top: 25px;
+    right: 0px;
+    display: none;
+    z-index: 5;
+}
+
+.headerBox .userArea .userArea-r .right-hidden p{
+    display: block;
+    height: 12px;
+    width: 15px;
+}
+.headerBox .userArea .userArea-r .right-hidden .arrow-r{
+    position: absolute;
+    right: 25px;
+    top:-8px;
+    background: url("../images/headernav_0917.png") -280px -55px no-repeat;
+}
+.headerBox .userArea .userArea-r .right-hidden dl{
+    border-bottom: 1px solid #E6E6E6;
+    width: 227px;
+    height: 40px;
+    padding: 8px 0 8px 10px ;
+    overflow: hidden;
+}
+.headerBox .userArea .userArea-r .right-hidden dl dt{
+    color: #249FF1  ;
+}
+.headerBox .userArea .userArea-r .right-hidden dl dd{
+    float: left;
+    line-height: 28px;
+    margin-left: 8px;
+    color: #EE55DD;
+}
+.headerBox .userArea .userArea-r .right-hidden dl dd a{
+    color: #999999;
+}
+.headerBox .userArea .userArea-r .right-hidden dl dd:hover{
+    text-decoration: underline;
+}
+.headerBox .userArea .userArea-r .right-hidden dl.last{
+    height: 95px;
+    border-bottom: none;
+}
+.headerBox .userArea .userArea-r .right-hidden dl.last dd {
+    line-height: 22px;
+
+}
+.headerBox .userArea .userArea-r .right-hidden dl.last dd{
+     color:#249FF1;
+ }
+.headerBox .userArea .userArea-r .right-hidden .more{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 237px;
+    height: 30px;
+    overflow: hidden;
+    background: #EFEFEF;
+}
+.headerBox .userArea .userArea-r .right-hidden .more a{
+    position: absolute;
+    color: #333;
+    right: 10px;
+    line-height: 30px;
+}
+.headerBox .userArea .userArea-r .right-hidden .more a:hover{
+    text-decoration: underline;
+    color: #249FF1;
+}
+/*登录注册结束*/
+/*中间区域隐藏盒子*/
+.headerBox .userArea div.userArea-m .mid-hidden{
+    top: 25px;
+    position: absolute;
+    left: -80px;
+    padding: 0px;
+    height: 126px;
+    width: 237px;
+    border: 1px solid #CECECE;
+    display: none;
+    z-index: 5;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-top{
+    width: 236px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 32px;
+    background: #FBFAFA;
+    border-bottom:1px solid #E6E6E6;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-top span{
+    display: block;
+    height: 31px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-top span.updata{
+    width: 84px;
+    position: absolute;
+    left: 40px;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-top .span_style{
+    color: #249FF1;
+    border-bottom:1px solid #249FF1;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-top span.history{
+    position: absolute;
+    width: 84px;
+    left: 125px;
+    height: 30px;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-m{
+    height: 62px;
+    width: 237px;
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    background:#FFFFFF ;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-b{
+    position: absolute;
+    top:96px;
+    width: 237px;
+    height: 28px;
+    font-size: 12px;
+    background: #EFEFEF;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-b a{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #333333;
+    line-height: 28px;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .mid-hidden-b a:hover{
+    color: rebeccapurple;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .historybox{
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 237px;
+    height: 214px;
+    border-bottom: 1px solid  #CECECE;;
+    border-left: 1px solid  #CECECE;;
+    border-right: 1px solid  #CECECE;;
+    background:gainsboro ;
+    display: none;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .historybox p{
+    position: absolute;
+    top: 55px;
+    left:78px;
+    color: #999999;
+    cursor: text;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .historybox dl{
+    position: absolute;
+    top: 110px;
+    line-height: 20px;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .historybox dl dt{
+    color: #999999;
+    cursor: text;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .historybox dl dd a{
+    color: #333333;
+}
+.headerBox .userArea div.userArea-m .mid-hidden .historybox dl a:hover{
+ color: #249FF1;
+    text-decoration: underline;
+}
+/*观看记录盒子*/
+/*中间区域隐藏盒子结束*/
+/*头部结束*/
+/*nav开始*/
+.nav {
+    width: 100%;
+    height: 36px;
+    background: #249FF1;
+    z-index: 4;
+}
+.nav .nav-box{
+    width: 1200px;
+    position: relative;
+    height: 36px;
+    margin: 0 auto;
+}
+.nav .nav-box ul.detail li{
+    float: left;
+    line-height: 36px;
+}
+.nav .nav-box ul.detail li.nav-one a{
+    padding-left: 0px;
+    font-weight: bold;
+}
+.nav .nav-box ul.detail li a{
+    display: block;
+    font-size: 14px;
+    color: white;
+    float: left;
+    padding: 0 16px 0 17px;
+    background: url("../images/headernav_0917.png") -355px -41px no-repeat;
+}
+.nav .nav-box ul.detail li a:hover{
+    position: relative;
+    background:#4FC4 ;
+    padding-right: 17px;
+    padding-left: -2px;
+}
+.nav .nav-box ul.detail li.nav-one a:hover{
+    background:#249FF1 ;
+    padding-right: 15px;
+    margin-left: 0px;
+}
+.nav .nav-box span.new{
+    position: absolute;
+    top: 0px;
+    left: 360px;
+    display: block;
+    height: 11px;
+    width: 25px;
+    background: url("../images/headernav_0917.png") -291px -72px no-repeat;
+}
+.nav .nav-box .navarea-r li{
+    float: right;
+}
+.nav .nav-box .navarea-r li a{
+    line-height: 36px;
+    color: #C7F4FF;
+    font-size: 12px;
+    padding-left: 13px;
+}
+.nav .nav-box .navarea-r li a:hover{
+    text-decoration: underline;
+    color: red;
+}
+/*nav结束*/
+/*图片轮播*/
+#pic {
+    width: 100%;
+    height: 450px;
+    border: 1px solid red;
+    background: url("../images/1.jpg") no-repeat center #704F84;
+}
+#pic .pic-box{
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    margin: 0px auto;
+    border: 1px solid blue;
+}
+#pic .pic-box .pic-small{
+    position: absolute;
+    top: 398px;
+    left: 0px;
+    border: 1px solid red;
+    height: 50px;
+}
+#pic .pic-box .pic-small li{
+    float: left;
+    height: 43px;
+    width:66px ;
+    margin-left: 9px;
+    border: 1px solid #4E4E4E;
+}
+ /*点击改变事件*/
+#pic .pic-box .pic-small li .hover{
+    border: 2px solid #FFCC00;
+    margin: -1px  -2px 0 0 ;
+}
+#pic .pic-box .pic-small li a{
+    display: block;
+    position: relative;
+}
+#pic .pic-box .pic-small li img{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 66px;
+    height: 43px;
+}
+/*图片轮播结束*/
