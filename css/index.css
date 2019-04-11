@@ -17,6 +17,39 @@ input,img{
 }
 /*初始化结束*/
 /*头部开始*/
+/*公用样式*/
+.hot-l-title{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 915px;
+    height: 28px;
+    border: 1px solid red;
+}
+.hot-l-title .htitle{
+    float: left;
+    width: 105px;
+    height: 24px;
+    background: url("../images/title_0910.png")0 0 no-repeat;
+}
+.hot-l-title .tablebox{
+    float: left;
+    line-height: 25px;
+    margin-left: 75px;
+    color: #DED8DE;
+}
+.hot-l-title .tablebox a{
+    color: #545454;
+    margin-left: 2px;
+    font-family: "微软雅黑";
+    margin-right: 9px;
+    font-size: 16px;
+    display: inline-block;
+}
+.hot-hover {
+    border-bottom:2px solid #0099FF;
+}
+/*公用样式*/
 .headerBox {
     position: relative;
     width: 1200px;
@@ -98,7 +131,7 @@ input,img{
 .headerBox .searchTag a:hover{
     text-decoration: underline;
 }
-    /*登录注册*/
+/*登录注册*/
 .headerBox .userArea{
     height: 15px;
     line-height: 15px;
@@ -239,8 +272,8 @@ input,img{
 
 }
 .headerBox .userArea .userArea-r .right-hidden dl.last dd{
-     color:#249FF1;
- }
+    color:#249FF1;
+}
 .headerBox .userArea .userArea-r .right-hidden .more{
     position: absolute;
     left: 0px;
@@ -363,7 +396,7 @@ input,img{
     color: #333333;
 }
 .headerBox .userArea div.userArea-m .mid-hidden .historybox dl a:hover{
- color: #249FF1;
+    color: #249FF1;
     text-decoration: underline;
 }
 /*观看记录盒子*/
@@ -457,7 +490,7 @@ input,img{
     margin-left: 9px;
     border: 1px solid #4E4E4E;
 }
- /*点击改变事件*/
+/*点击改变事件*/
 #pic .pic-box .pic-small li .hover{
     border: 2px solid #FFCC00;
     margin: -1px  -2px 0 0 ;
@@ -539,3 +572,57 @@ input,img{
     border-bottom: 2px solid #249FF1;
 }
 /*图片轮播结束*/
+/*今日热播*/
+.hot{
+    width: 1200px;
+    height: 508px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.hot .hot-left{
+    position: relative;
+    width: 930px;
+    left: 0px;
+    float: left;
+    height: 460px;
+    margin-top: 25px;
+    border: 1px solid blue;
+}
+.hot .hot-left ul.public{
+    position: absolute;
+    width: 950px;
+    height: 460px;
+    top: 20px;
+    left: -35px;
+    border: 1px solid black;
+}
+ul.public li{
+    float: left;
+    width: 155px;
+    height:127px;
+    padding-left: 35px;
+    padding-top: 12px;
+    overflow: hidden;
+}
+ul.public li a.pic{
+    display: block;
+    position: relative;
+    width: 155px;
+    height: 100px;
+}
+ul.public li a.pic img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+ul.public li a.pic .masktxt{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 66px;
+    width: 155px;
+    height: 34px;
+    line-height: 48px;
+    padding-right: 3px;
+}
+/*今日热播结束*/
